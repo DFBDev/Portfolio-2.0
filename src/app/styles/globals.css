@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+main{
+  overflow-x:hidden;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  background-color:#141414;
+  height:6vh;
+  width:100vw;
+  min-height:76px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+  border-bottom-style:solid;
+  border-bottom-color:#3D3D3D;
+  border-bottom-width:3px;
+  position:fixed;
+  z-index:10;
+}
+footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #141414;
+  color:#FFFFFF;
+  height:5rem;
+  font-size:1rem;
+  border-top-style:solid;
+  border-top-color:#3D3D3D;
+  border-top-width:3px;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.50);
+  font-family:'Quicksand';
+  letter-spacing:2px;
+}
