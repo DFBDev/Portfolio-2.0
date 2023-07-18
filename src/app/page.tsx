@@ -19,7 +19,6 @@ export default function Home() {
       </header>
       <section className={styles.introAndScrollSelector}>
         <div className={styles.nameAndGraphicContainer}>
-          <Image className={styles.columnSVG}src={'./images/Group 7.svg'} height={0} width={240} alt={'Column'}></Image>
           <Image className={styles.introductionImage} src={'./images/Group 2.svg'} height={650} width={650} alt={"Donathan Brown Intro Art"}></Image>
           <div className={styles.sectionScroll}>
             <div className={styles.scrollBar}>
@@ -35,7 +34,6 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Image className={styles.columnSVG}src={'./images/Group 7.svg'} height={0} width={240} alt={'Column'}></Image>
         </div>
         <div className={styles.sectionTitleBorderCover}></div>
       </section>

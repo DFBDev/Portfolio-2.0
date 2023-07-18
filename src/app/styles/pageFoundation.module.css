@@ -126,7 +126,7 @@
     background-color: #D9D9D9;
     border-radius:1rem;
     min-height:360px;
-    max-height:380px;
+    max-height:340px;
 }
 .scrollBarButton{
     height:20%;
@@ -148,7 +148,7 @@
     justify-content:center;
     height:100%;
     width:100%;
-    gap:18%;
+    gap:15%;
     font-family:'Quicksand';
     font-weight:600;
     font-size:0.9rem;
@@ -290,11 +290,15 @@
     transform:translateY(0%);
     animation: projectMoreFadeIn 1s ease-in-out;
 }
+.projMore:hover .moreIcon{
+    box-shadow: 0px 0px 4px 2px white;
+}
 .moreIcon{
-    transition:all 0.2s ease-in-out;
+    transition:all 0.3s ease-in-out;
     z-index:2;
     position:absolute;
     right:0.6em;
+    border-radius:100%;
 }
 .lineDivider{
     width:2px;
