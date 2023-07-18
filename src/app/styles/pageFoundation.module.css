@@ -1,0 +1,303 @@
+@keyframes twist {
+    0%{
+       transform:translateY(5%);
+    }
+    50%{
+        transform:translateY(0%)
+    }
+    100%{
+        transform:translateY(5%);
+    }
+}
+
+.headerNameAndLogo {
+    color:white;
+    font-family:'Overlock';
+    display:flex;
+    align-items:center;
+    gap:0.5em;
+    width:fit-content;
+    font-size:1.4em;
+    margin-left:2%;
+}
+.hnlSpan{
+    font-family:'Quicksand';
+}
+.headerOptions{
+    display:flex;
+    width:fit-content;
+    gap:8rem;
+    font-size:1.4em;
+    font-family:'Quicksand';
+    margin-right:2%;
+}
+.headerLinkedIn, .headerGitHub, .headerResume{
+    color:white;
+    transition:all 0.1s ease-in-out;
+}
+.headerLinkedIn:hover, .headerGitHub:hover, .headerResume:hover{
+    transform:scale(1.1);
+}
+.introAndScrollSelector{
+    height:70vh;
+    min-height:740px;
+    width:100vw;
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-bottom-color:#1D1D1D;
+    background-color:white;
+}
+.sectionTitleBorderCover{
+    background-color: white;
+    width:244px;
+    height:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.columnSVG{
+    margin-top:auto;
+    height:64vh;
+    margin-right:auto;
+    margin-left:auto;
+}
+.stcContainer{
+    display:flex;
+    justify-content:center;
+    width:100vw;
+    height:200px;
+    z-index:-1;
+    background-color: #F6F6F6;
+}
+.sectionTitleOverlap{
+    background-color: white;
+    width:250px;
+    height:120px;
+    border-color:white;
+    z-index:1;
+    border-style:solid;
+    border-width:3px;
+    border-color:#1D1D1D;
+    border-top-style:none;
+}
+.sectionTitle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    letter-spacing:5px;
+    height:50px;
+    margin-top:70px;
+    background-color: #1D1D1D;
+    font-family:'Quicksand';
+    font-size:1.2em;
+}
+.nameAndGraphicContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    height:69.7vh;
+    width:100vw;
+    z-index:2;
+}
+.introductionImage{
+    margin-right:2%;
+    width:26vw;
+    max-width:800px;
+    min-width:500px;
+    animation: twist 4s infinite;
+}
+.sectionScroll{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:50%;
+    width:20%;
+    min-width:360px;
+    background-color: white;
+    z-index:2;
+}
+.scrollBar{
+    display:flex;
+    justify-content:center;
+    height:90%;
+    width:8px;
+    background-color: #D9D9D9;
+    border-radius:1rem;
+    min-height:360px;
+    max-height:380px;
+}
+.scrollBarButton{
+    height:20%;
+    width:8px;
+    background-color: white;
+    border-style:solid;
+    border-color:#1D1D1D;
+    border-width:2px;
+    border-radius:1rem;
+}
+.sectionSelections{
+    height:70%;
+    margin-left:8%;
+    min-height:300px;
+}
+.sectionsContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    gap:18%;
+    font-family:'Quicksand';
+    font-weight:600;
+    font-size:0.9rem;
+    letter-spacing:5px;
+}
+.selectionIndicator{
+    background-color: #DDDDDD;
+    width:6px;
+    height:6px;
+    border-radius:100%;
+    margin-right:6%;
+    margin-top:auto;
+    margin-bottom:2%;
+}
+.dynamicSection{
+    width:100vw;
+    height:80vh;
+    max-height:1200px;
+    margin-top:auto;
+    background-color: #F6F6F6;
+}
+
+/* Stylings for recent works, will be moved into component module soon */
+
+@keyframes projectMoreFadeIn {
+    0%{
+        transform:translateY(180%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+
+.projectsContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:66vh;
+    gap:10vw;
+}
+.projectOutline, .projectOutline2, .projectOutline3{
+    width:24vw;
+    min-width:400px;
+    max-width:400px;
+    height:20vw;
+    min-height:300px;
+    max-height:350px;
+    border-width:2px;
+    border-radius:0.4rem;
+    border-style:solid;
+    border-color:black;
+    background-color: #FFFFFF;
+}
+.projectOutline, .projectOutline3{
+    margin-bottom:20em;
+}
+.projectBox, .projectBox2, .projectBox3{
+    display:flex;
+    background-color: #3e3e3e;
+    width:24vw;
+    min-width:400px;
+    max-width:400px;
+    height:20vw;
+    border-radius:0.4rem;
+    min-height:300px;
+    max-height:350px;
+    position:relative;
+    top:-10%;
+    left:-8%;
+}
+.projectBox{
+    background-color:rgb(0, 34, 0) !important;
+}
+.projImageCover{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    backdrop-filter:blur(8px);
+    background: rgba(62, 62, 62, 0.50);
+    position:absolute;
+    border-radius:0.4rem;
+}
+.projectOptions{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.projectTitle{
+    color:#DADADA;
+    font-size:1.8rem;
+    font-family:'Quicksand';
+    margin-top:auto;
+    margin-bottom:2%;
+    letter-spacing:3px;
+}
+.projMore{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    width:20%;
+    height:20%;
+    max-width:80px;
+    min-height:80px;
+    color:#DADADA;
+    font-family:'Quicksand';
+    font-size:1.4rem;
+    margin-top:20%;
+    margin-left:auto;
+    letter-spacing:2px;
+    transition:all 0.4s ease-in-out;
+    cursor:pointer;
+    overflow:hidden;
+    background-color: #1D1D1D;
+    border-bottom-right-radius:0.4rem;
+    border-top-left-radius:0.4rem;
+}
+.projMore::before{
+    content:'Read More?';
+    z-index:0;
+    transform:translateX(-180%);
+    transition:all 0.2s ease-in-out;
+    opacity:0;
+    margin-left:14%;
+    margin-right:auto;
+}
+.projMore:hover{
+    width:70%;
+    max-width:280px;
+}
+.projMore:hover::before{
+    font-weight:600 !important;
+    opacity:1;
+    display:block;
+    transform:translateY(0%);
+    animation: projectMoreFadeIn 1s ease-in-out;
+}
+.moreIcon{
+    transition:all 0.2s ease-in-out;
+    z-index:2;
+    position:absolute;
+    right:0.6em;
+}
+.lineDivider{
+    width:2px;
+    height:40%;
+    background-color: #DADADA;
+}
