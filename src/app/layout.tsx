@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Overlock&family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>{children}</body>
