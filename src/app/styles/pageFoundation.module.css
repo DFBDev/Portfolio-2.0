@@ -249,7 +249,7 @@
 }
 .dynamicSection{
     width:100vw;
-    height:80vh;
+    height:81vh;
     max-height:1200px;
     margin-top:auto;
     background-color: #f0f0f0;
@@ -266,7 +266,7 @@
     margin-left:auto;
     margin-right:auto;
     padding-top:4%;
-    padding-bottom:1%;
+    padding-bottom:1.5%;
     font-family:'Quicksand';
     color:#777777;
     border-bottom:solid 1px rgb(59, 59, 59);
@@ -460,36 +460,33 @@
     gap:10vw;
 }
 .projectOutline, .projectOutline2, .projectOutline3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width:24vw;
     min-width:300px;
     max-width:453px;
     height:20vw;
-    min-height:300px;
-    max-height:330px;
-    border-radius:0.4rem;
-    background-color: #272727;
+    min-height:400px;
+    max-height:450px;
+    border-radius:0.6rem;
+    background-color: #e2e2e2;
     margin-top:4em;
     margin-bottom:10em;
     transition:all 0.3s ease-in-out;
-}
-.projectOutline{
-    margin-left:1%;
+    box-shadow:inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .projectBox, .projectBox2, .projectBox3{
     display:flex;
     background-color: #3e3e3e;
     width:24vw;
     min-width:300px;
-    max-width:450px;
+    max-width:410px;
     height:20vw;
     border-radius:0.4rem;
-    border:solid 2px white;
-    min-height:300px;
-    max-height:325px;
+    min-height:350px;
+    max-height:410px;
     position:relative;
-    top:-12%;
-    left:-8%;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.50);
     transition:all 0.3s ease-in-out;
 }
 .projectBox{
@@ -534,7 +531,7 @@
     color:#DADADA;
     font-family:'Quicksand';
     font-size:1.4rem;
-    margin-top:10%;
+    margin-top:20%;
     margin-left:auto;
     letter-spacing:2px;
     transition:all 0.4s ease-in-out;
