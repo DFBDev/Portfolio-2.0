@@ -18,7 +18,7 @@
     align-items:center;
     gap:0.5em;
     width:fit-content;
-    font-size:1.4em;
+    font-size:clamp(1.2em, 2vw, 1.4em);
     margin-left:1.6%;
 }
 .hnlSpan{
@@ -32,16 +32,14 @@
     display:flex;
     width:fit-content;
     gap:6rem;
-    font-size:1.4em;
+    font-size:clamp(1em, 3vw, 1.4em);
     font-family:'Quicksand';
-    margin-right:4%;
+    margin-right:1.5%;
     color:white;
 }
 .headerOpt{
     z-index:1;
     transition:all 0.2s ease-in-out;
-    padding-left:2%;
-    padding-right:2%;
 }
 .headerOpt:hover{
     background-color: white;
@@ -62,8 +60,12 @@
     margin-bottom:8%;
     margin-right:6%;
     border-radius:100%;
-    width:14%;
-    height:40%;
+    width:14vw;
+    height:14vw;
+    min-width:150px;
+    min-height:150px;
+    max-width:450px;
+    max-height:450px;
     overflow:hidden;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(219,219,219,1) 100%);
@@ -88,23 +90,70 @@
     justify-content:center;
     width:24%;
     height:50%;
+    min-width:350px;
     margin-bottom:8%;
+}
+@media screen and (max-width: 800px) {
+    .dynamicSection{
+        height:160vh;
+        max-height:1400px !important;
+    }
+    .introAndScrollSelector{
+        background-position-x:48%;
+    }
+    .nameAndGraphicContainer{
+        flex-direction:column;
+    }
+    .headerNameAndLogo{
+        margin-left:auto;
+    }
+    .hnlSpan{
+        display:none;
+    }
+    .headerOptions{
+        gap:1rem;
+        margin-right:auto;
+        margin-left:2%;
+    }
+    .introSectionImageContainer{
+        margin-bottom:0%;
+        margin-top:24%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .introTextContainer{
+        margin-top:-10%;
+        margin-bottom:auto;
+    }
+    .itcH1, .itcH2, .itcP{
+        text-align:center;
+    }
+    .socialsContainer{
+        justify-content:center;
+    }
+    .dsHeader{
+        position:relative;
+        top:-6%;
+    }
+    .pageOption, .pageOption2, .pageOption3, .pageOption4, .pageOption5{
+        padding:8% !important;
+    }
 }
 .itcH1{
     font-weight:600;
-    font-size:2rem;
+    font-size:clamp(1.5rem, 2vw, 2rem);
     font-family:'Quicksand';
 }
 .itcH2{
     font-weight:600;
-    font-size:2rem;
+    font-size:clamp(1.5rem, 2vw, 2rem);
     font-family:'Quicksand';
     margin-bottom:2%;
     color:#4E4D4D;
 }
 .itcP{
     color:#666666;
-    font-size:1.1rem;
+    font-size:clamp(0.85rem, 2vw, 1.1rem);
     font-weight:600;
     font-family:'Quicksand';
 }
@@ -140,59 +189,21 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:1rem;
     color:white;
     font-family:'Quicksand';
-    font-size:2rem;
+    font-size:clamp(1.1rem, 2vw, 2rem);
     text-align:center;
     width:30%;
-    min-width:900px;
+    min-width:340px;
     margin-left:auto;
     margin-right:auto;
 }
-.dsHeaderAccent{
-    margin-bottom:5.5%;
-    position:relative;
-    left:-1%;
-}
-.dsHeaderAccent2{
-    margin-bottom:5.5%;
-    position:relative;
-    right:-1%;
-}
 .flashingUnderscore{
-    margin-left:-2%;
     animation: flashing 1s infinite none;
 }
 
 /* Stylings for recent works, will be moved into component module soon */
 
-@keyframes projectMoreFadeIn {
-    0%{
-        transform:translateX(-180%);
-    }
-    100%{
-        transform:translateY(0%);
-    }
-}
-@media screen and (max-width:1000px){
-    .dynamicSection{
-        height:200vh;
-        max-height:2000px !important;
-    }
-    .projectsContainer{
-        flex-direction:column;
-        height:90% !important;
-    }
-    .projectOutline{
-        margin-top:10em !important;
-        margin-bottom:0 !important;
-    }
-    .projMore:hover{
-        width:100% !important;
-        max-width:380px;
-    }
-}
 
 .pagesContainer{
     display:flex;
@@ -214,22 +225,23 @@
     align-items:left;
     flex-direction:column;
     width:24vw;
-    min-width:300px;
+    min-width:220px;
     max-width:340px;
     height:20vw;
-    min-height:300px;
+    min-height:250px;
     max-height:450px;
     background-color: #1d1d1d;
     transition:all 0.2s ease-in-out;
     box-shadow:inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     color:white;
     font-family:'Quicksand';
-    font-size:2rem;
+    font-size:clamp(1.5rem, 2vw, 2rem);
     padding:2%;
     cursor:pointer;
 }
 .pageOptionH2{
     font-size:1rem;
+    font-size:clamp(0.8rem, 2vw, 1rem);
 }
 .keywordsContainer{
     display:flex;
