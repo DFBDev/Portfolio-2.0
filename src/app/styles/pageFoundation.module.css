@@ -101,7 +101,7 @@
 }
 @media screen and (max-width: 800px) {
     .dynamicSection{
-        height:160vh;
+        height:200vh;
         max-height:1400px !important;
     }
     .introAndScrollSelector{
@@ -143,6 +143,7 @@
     }
     .pageOption, .pageOption2, .pageOption3, .pageOption4, .pageOption5{
         padding:8% !important;
+        min-width:300px !important;
     }
 }
 .itcH1{
@@ -199,7 +200,7 @@
     font-family:'Quicksand';
     font-size:clamp(1.1rem, 2vw, 2rem);
     text-align:center;
-    width:30%;
+    width:40%;
     min-width:340px;
     margin-left:auto;
     margin-right:auto;
