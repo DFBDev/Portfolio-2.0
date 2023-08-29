@@ -3,38 +3,8 @@
 import Image from 'next/image'
 import './styles/globals.css'
 import styles from './styles/pageFoundation.module.css'
-import { useRef } from 'react'
 
 export default function Home() {
-  const scrollButtonStatusRef = useRef(false);
-  const scrollButton = document?.getElementById("scrollButtonContainer");
-
-  if(typeof window !== 'undefined'){
-    scrollButton?.addEventListener('mousedown', () => {
-      let scrollButtonHeight = (scrollButton.offsetHeight) / 2;
-      console.log("event fired!");
-  
-      scrollButtonStatusRef.current = true;
-        scrollButton?.addEventListener('mousemove', (instance2) => {
-          if(scrollButtonStatusRef.current === true && scrollButton.offsetTop >= 272 && scrollButton.offsetTop <= 554){
-            scrollButton!.style.top = (instance2.clientY - scrollButtonHeight).toString() + "px";
-          }
-          else if(scrollButton.offsetTop < 272){
-            scrollButton!.style.top = "272px";
-          }
-          else if(scrollButton.offsetTop > 550){
-            scrollButton!.style.top = "554px";
-          }
-        })
-    });
-    
-    if(typeof window !== 'undefined'){
-      scrollButton?.addEventListener('mouseup', () => {
-        document.removeEventListener('mousemove', () => {});
-        scrollButtonStatusRef.current = false;
-      });
-    };
-  }
 
   return (
     <main>
